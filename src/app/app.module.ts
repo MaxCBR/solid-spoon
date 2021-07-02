@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Goal1Component } from './components/goal1/goal1.component';
 import { Goal2Component } from './components/goal2/goal2.component';
+import { CombinedComponent } from './components/combined/combined.component';
 
 @NgModule({
-  declarations: [AppComponent, Goal1Component, Goal2Component],
+  declarations: [AppComponent, Goal1Component, Goal2Component, CombinedComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
