@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="tab">
+    <button
+      *ngFor="let item of contents; index as i"
+      class="tablinks"
+      (click)="updateActiveIndex(i)"
+      [class.active]="i === activeIndex"
+    >
+      Item{{ i + 1 }}
+    </button>
+  </div>
+  <div class="tabcontent" [style.min-height.rem]="contents.length * 2.7 - 0.2">
+    <h3>{{ contents[activeIndex].heading }}</h3>
+    <div>
+      {{ contents[activeIndex].text }}
+    </div>
+  </div>
+
+  <!-- <div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div> -->
+</div>

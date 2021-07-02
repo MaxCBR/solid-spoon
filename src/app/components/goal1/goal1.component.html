@@ -1,0 +1,24 @@
+<!--
+  Depending on the number of tabs fed into 'contents' array, the view will change accordingly
+  Each item is a Content Object ({heading:'',text:''})
+-->
+<div class="container">
+  <ng-template ngFor let-item [ngForOf]="contents" let-i="index">
+    <button
+      [class]="isWindowSmall ? 'buttonBar' : 'buttonTop'"
+      [class.active]="i === activeIndex"
+      (click)="onIndexChange(i)"
+    >
+      <!--"Item1, Item2 ..." can be changed to a title by adding a title field in "Content" Model-->
+      Item{{ i + 1 }}
+    </button>
+    <div
+      class="content"
+      [class.content-large]="!isWindowSmall"
+      [style.display]="i === activeIndex ? 'block' : 'none'"
+    >
+      <h3>{{ contents[activeIndex].heading }}</h3>
+      <div>{{ contents[activeIndex].text }}</div>
+    </div>
+  </ng-template>
+</div>

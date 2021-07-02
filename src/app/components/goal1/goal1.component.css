@@ -1,0 +1,60 @@
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-bottom: 2rem;
+}
+button {
+  background-color: rgb(127, 161, 236);
+  color: #444;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  height: 3rem;
+}
+
+/* for small screen */
+.buttonBar {
+  margin-top: 0.3rem;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+/* remove first button's top margin */
+.buttonBar:first-child {
+  margin-top: 0;
+}
+
+/* for large screen */
+.buttonTop {
+  margin-right: 0.3rem;
+  width: fit-content;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+  float: left;
+  position: relative;
+}
+
+/* color used when tab activated or hovered on */
+.active,
+.buttonTab:hover {
+  background-color: rgb(217, 229, 233);
+}
+
+.content {
+  background-color: rgb(217, 229, 233);
+  display: block;
+  padding: 2rem;
+}
+.content h3 {
+  margin-bottom: 1rem;
+}
+.content-large {
+  /* floating to right and -100% margin left makes buttons all float on top in the same row */
+  float: right;
+  position: relative;
+  margin: 3rem 0 0 -100%;
+  width: 100%;
+}
