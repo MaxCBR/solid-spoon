@@ -45,8 +45,11 @@ button {
 
 .content {
   background-color: rgb(217, 229, 233);
-  display: block;
   padding: 2rem;
+  display: none;
+}
+.content-show {
+  display: block;
 }
 .content h3 {
   margin-bottom: 1rem;

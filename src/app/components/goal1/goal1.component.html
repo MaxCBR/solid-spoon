@@ -15,7 +15,7 @@
     <div
       class="content"
       [class.content-large]="!isWindowSmall"
-      [style.display]="i === activeIndex ? 'block' : 'none'"
+      [class.content-show]="i === activeIndex"
     >
       <h3>{{ contents[activeIndex].heading }}</h3>
       <div>{{ contents[activeIndex].text }}</div>

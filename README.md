@@ -15,26 +15,47 @@
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Clone repository
+  ```bash
+  git clone
+  ```
+- Install dependencies
+  ```bash
+  cd solid-spoon
+  npm install
+  ```
+- Start dev server:
+
+  ```bash
+  ng serve
+  ```
+
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-```
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Build the project. The build artifacts will be stored in the `dist/` directory.
+
+```bash
+ng build
 ```
 
 ## Running unit tests
 
-```
-Run `ng test` to execute the unit tests
+execute the unit tests
+
+```bash
+ng test
 ```
 
 ## Running end-to-end tests
 
 Firstly keep dev server running, then
 
-```
+```bash
 npx cypress open
 ```
 
-Choose `*.spec.js` files to run tests
+Select browser
+
+Select `*.spec.js` files to run tests
