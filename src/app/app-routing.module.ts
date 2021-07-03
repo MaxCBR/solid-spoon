@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'goal1', component: Goal1Component },
   { path: 'goal2', component: Goal2Component },
   { path: 'both', component: CombinedComponent },
+  { path: '', redirectTo: '/both', pathMatch: 'full' },
 ];
 
 @NgModule({
