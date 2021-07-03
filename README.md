@@ -17,7 +17,7 @@
 
 - Clone repository
   ```bash
-  git clone
+  git clone https://github.com/MaxCBR/solid-spoon.git
   ```
 - Install dependencies
   ```bash
